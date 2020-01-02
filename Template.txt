@@ -1,0 +1,46 @@
+/**
+ *    Author:   Sambhu Show(JGEC)
+ *    fb    :   https://www.facebook.com/sambhu.show.98
+ *              #everyday counts.....(^_^)
+**/
+#include<bits/stdc++.h>
+using namespace std;
+#define fio ios_base::sync_with_stdio(false);cin.tie(NULL);
+#define itc int t;cin>>t;while(t--)
+#define ltc ll t;cin>>t;while(t--)
+#define ll long long int
+#define ld long double
+#define pb push_back
+#define vll vector<ll>
+#define sll set<ll>
+#define mpll map<ll ,ll>
+#define sortd(arr) sort(arr,arr+n,greater<ll>())
+#define revs(str) reverse(str.begin(), str.end());
+#define memset(arr) memset(arr,0,sizeof(arr));//array elements to 0
+//-----------------------#Sambhu.98(CF)-------------------------------//
+#define fr(i,a,b) for(ll i=a;i<=b;i++)
+#define frr(i,a,b) for(ll i=a;i>=b;i--)
+ll const inf=1e18;
+//-----------------------#sambhu_98(CC)------------------------//
+bool isPrime(ll n)
+{   if (n <= 1)  return false;
+    if (n <= 3)  return true;
+    if (n % 2 == 0 or n % 3 == 0)  return false;
+    ll i = 5;
+    while(i * i <= n) { 
+        if (n % i == 0 or n % (i + 2) == 0)  
+        return false;
+        i = i + 6;}
+        return true;
+}
+ll gcd(ll a, ll b) 
+{ 
+    if (b == 0) 
+        return a; 
+    return gcd(b, a % b);  
+}
+/*/\/\/\/\/\/\/\/\/\/\/\/\//\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+int main()
+{
+    return 0;
+}
